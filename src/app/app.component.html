@@ -9,17 +9,30 @@
     <!-- ============================================================== -->
 
     <div class="content-page">
-      <div class="content">
-        <!-- Topbar Start -->
 
+      <!-- content -->
+      <div class="content">
+
+        <!-- Topbar Start -->
         <app-topbar></app-topbar>
         <!-- end Topbar -->
+
+        <!-- Start Content-->
+        <router-outlet></router-outlet>
+        <!-- End container -->
+
       </div>
+      <!-- content -->
+
+      <!-- Footer Start -->
+      <app-footer></app-footer>
+      <!-- end Footer -->
 
     </div>
-
-
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
 
 </div>
+<!-- END wrapper -->
 
-<router-outlet></router-outlet>

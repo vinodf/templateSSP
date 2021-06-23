@@ -7,12 +7,14 @@ import { RouterModule } from "@angular/router";
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    TopbarComponent
+    TopbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 
     // shared components
     NavbarComponent,
-    TopbarComponent
+    TopbarComponent,
+    FooterComponent
   ]
 })
 export class CoreModule { }
