@@ -47,6 +47,7 @@ export class FormFieldErrorComponent implements OnInit {
       const requiredLength = this.formControl.errors.maxlength.requiredLength;
       return `deve ter no máximo ${requiredLength} caracteres`;
     }
+    return null;
   }
 
 }

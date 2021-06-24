@@ -1,23 +1,21 @@
-<!-- start page title -->
 <div class="row">
-    <div class="col-12">
-        <div class="page-title-box">
-            <div class="page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a routerlink="/">Home</a></li>
-                    <li *ngFor="let item of items" class="breadcrumb-item" [class.active]="isTheLastItem(item)">
-                      <span *ngIf="isTheLastItem(item)">
-                        {{item.text}}
-                      </span>
+  <div class="col-12">
+      <div class="page-title-box">
+          <div class="page-title-right">
+              <ol class="breadcrumb m-0">
+                  <li class="breadcrumb-item"><a routerlink="/">Home</a></li>
+                  <li *ngFor="let item of items" class="breadcrumb-item" [class.active]="isTheLastItem(item)">
+                    <span *ngIf="isTheLastItem(item)">
+                      {{item.text}}
+                    </span>
 
-                      <a *ngIf="!isTheLastItem(item)" [routerLink]="item.link">
-                        {{item.text}}
-                      </a>
-                    </li>
-                </ol>
-            </div>
-            <h4 class="page-title"></h4>
-        </div>
-    </div>
+                    <a *ngIf="!isTheLastItem(item)" [routerLink]="item.link">
+                      {{item.text}}
+                    </a>
+                  </li>
+              </ol>
+          </div>
+          <h4 class="page-title" >{{ items[0].text }}</h4>
+      </div>
+  </div>
 </div>
-<!-- end page title -->

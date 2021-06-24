@@ -6,7 +6,7 @@ interface BreadCrumbItem {
 }
 
 @Component({
-  selector: 'app-breadcrumb',
+  selector: 'app-bread-crumb',
   templateUrl: './bread-crumb.component.html',
   styleUrls: ['./bread-crumb.component.css']
 })

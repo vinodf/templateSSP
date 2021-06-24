@@ -12,7 +12,7 @@ import toastr from "toastr";
 
 @Directive()
 export abstract class BaseResourceFormComponent<T extends BaseResourceModel> implements OnInit, AfterContentChecked{
-  
+
   currentAction: string;
   resourceForm: FormGroup;
   pageTitle: string;
@@ -28,7 +28,7 @@ export abstract class BaseResourceFormComponent<T extends BaseResourceModel> imp
     public resource: T,
     protected resourceService: BaseResourceService<T>,
     protected jsonDataToResourceFn: (jsonData) => T
-  ) { 
+  ) {
     this.route = this.injector.get(ActivatedRoute);
     this.router = this.injector.get(Router);
     this.formBuilder = this.injector.get(FormBuilder);
@@ -65,7 +65,7 @@ export abstract class BaseResourceFormComponent<T extends BaseResourceModel> imp
 
   protected loadResource() {
     if (this.currentAction == "edit") {
-      
+
       this.route.paramMap.pipe(
         switchMap(params => this.resourceService.getById(+params.get("id")))
       )
@@ -118,7 +118,7 @@ export abstract class BaseResourceFormComponent<T extends BaseResourceModel> imp
       )
   }
 
-  
+
   protected actionsForSuccess(resource: T){
     toastr.success("Solicitação processada com sucesso!");
 
@@ -143,5 +143,5 @@ export abstract class BaseResourceFormComponent<T extends BaseResourceModel> imp
   }
 
 
-  protected abstract buildResourceForm(): void;
+  protected abstract buildResourceForm(): void ;
 }
