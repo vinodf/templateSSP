@@ -1,1 +1,30 @@
-<p>form-list works!</p>
+<div class="container-fluid">
+
+  <!-- start page title -->
+  <div class="row">
+
+  <app-bread-crumb
+    [items]="[{text: 'Formulários'}]"
+  ></app-bread-crumb>
+
+  </div>
+  <!-- end page title -->
+
+  <div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="header-title">Input Types</h4>
+
+                <div class="tab-content">
+
+                  <table datatable [dtOptions]="dtOptions" class="table table-striped row-border hover"></table>
+
+                </div> <!-- end tab-content-->
+            </div> <!-- end card-body -->
+        </div> <!-- end card -->
+    </div><!-- end col -->
+  </div><!-- end row -->
+
+
+</div>
