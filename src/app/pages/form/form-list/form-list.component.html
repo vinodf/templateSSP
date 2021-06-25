@@ -14,13 +14,17 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="header-title">Input Types</h4>
+                <h4 class="header-title">DataTables</h4>
 
                 <div class="tab-content">
+                  <div class="tab-pane show active mt-5" id="basic-datatable-preview">
 
-                  <table datatable [dtOptions]="dtOptions" class="table table-striped row-border hover"></table>
+                    <table datatable [dtOptions]="dtOptions" class="table table-striped row-border hover  dt-responsive nowrap w-100"></table>
+
+                  </div>
 
                 </div> <!-- end tab-content-->
+
             </div> <!-- end card-body -->
         </div> <!-- end card -->
     </div><!-- end col -->
